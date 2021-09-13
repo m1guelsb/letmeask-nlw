@@ -5,7 +5,7 @@ import { NewRoom } from './pages/NewRoom';
 
 import { AuthContextProvider } from './contexts/AuthContext'
 
-function App() {
+function App () {
 
   return (
     <BrowserRouter>
