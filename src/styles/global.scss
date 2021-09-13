@@ -1,0 +1,19 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $color3;
+  color: $color2;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 16px $font1, sans-serif;
+}
