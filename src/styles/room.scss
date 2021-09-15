@@ -96,5 +96,12 @@
         }
       }
     }
+
+    .question-list {
+      margin-top: 32px;
+      :first-letter {
+        text-transform: capitalize;
+      }
+    }
   }
 }
