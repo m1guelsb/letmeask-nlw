@@ -5,9 +5,21 @@
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba($color: #000000, $alpha: 0.1);
   padding: 24px;
+  padding-bottom: 12px;
+  border: 1px solid transparent;
 
   & + .question {
     margin-top: 8px;
+  }
+
+  &.highlighted {
+    background: #f4f0ff;
+    border: 1px solid $color1;
+  }
+
+  &.answered {
+    background: #dbdcdd;
+    border: 1px solid $color4;
   }
 
   p {
@@ -35,6 +47,13 @@
         margin-left: 8px;
         color: $color2;
       }
+    }
+    .question-icons {
+      gap: 16px;
+    }
+
+    > div {
+      display: flex;
     }
 
     button {
