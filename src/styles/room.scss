@@ -15,6 +15,15 @@
       .logo-room {
         max-height: 45px;
       }
+
+      > div {
+        display: flex;
+        gap: 16px;
+
+        button {
+          max-height: 40px;
+        }
+      }
     }
   }
 
@@ -55,6 +64,7 @@
         box-shadow: 0 2px 12px rgba($color: #000000, $alpha: 0.1);
         resize: vertical;
         min-height: 130px;
+        resize: none;
       }
 
       .form-footer {

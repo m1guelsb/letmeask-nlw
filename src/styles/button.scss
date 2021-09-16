@@ -21,6 +21,19 @@
     margin-right: 8px;
   }
 
+  &.outlined {
+    background: transparent;
+    border: 1px solid $color1;
+    color: $color1;
+
+    transition: 0.2s;
+  }
+  &.outlined:hover {
+    background: $color1;
+    border: 1px solid $color1;
+    color: $color3;
+  }
+
   &:not(:disabled):hover {
     filter: brightness(0.9);
   }

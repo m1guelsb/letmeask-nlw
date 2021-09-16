@@ -26,7 +26,7 @@ export function Home() {
 
   async function handleCreateRoom(){
     if (!user) {
-      await signInWithGoogle()
+      await signInWithGoogle();
     }
     history.push('/rooms/new');
   }
@@ -40,10 +40,13 @@ export function Home() {
 
     const roomRef = await database.ref(`rooms/${roomCode}`).get() //pega de dentro de rooms a sala com o código passado no input
     if (!roomRef.exists()) { //se !nao existir tal sala com tal codigo
-      alert('Room does not exist.');
+      alert('A sala não existe.');
+      return;
+    }
+    if (roomRef.val().endedAt){ //se foi encerrada
+      alert('A sala foi encerrada.')
       return;
     }//se existe:
-    
     history.push(`/rooms/${roomCode}`); //redireciona para o id da sala
 
   }
