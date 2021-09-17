@@ -130,7 +130,6 @@ export function AdminRoom() {
                   </>
                 )}
 
-               
 
                 <button 
                 type = "button"
